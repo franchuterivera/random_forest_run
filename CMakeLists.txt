@@ -20,7 +20,7 @@ IF(NOT CMAKE_BUILD_TYPE)
 ENDIF()
 
 # required libaries
-find_package(Boost CONFIG COMPONENTS unit_test_framework)
+find_package(Boost COMPONENTS unit_test_framework)
 find_package(Doxygen)
 find_package(PythonInterp 3)
 find_package(SWIG)
@@ -29,7 +29,7 @@ enable_testing()
 
 # define all include directories within the project for different splits, data containers, node types etc...
 include_directories ("${PROJECT_SOURCE_DIR}/include")
-include_directories ("${Boost_INCLUDE_DIR}")
+#include_directories ("${Boost_INCLUDE_DIR}")
 
 
 # the documentation
