@@ -38,12 +38,13 @@ jobs:
       run: cmake --version
     - name: Use g++
       run: g++ --version
+    - name: Use boost
+      run: whereis boost
     - name: Run Ctest
       run: |
         mkdir build
         cd build
-        cmake .. -DSWIG_EXECUTABLE=/usr/bin/swig
-        make
+        cmake .. && make pyrfr_docstrings
         ctest --output-on-failure
     - name: Coverage
       timeout-minutes: 45
