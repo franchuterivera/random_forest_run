@@ -39,7 +39,7 @@ jobs:
     - name: Use g++
       run: g++ --version
     - name: Use boost
-      run: whereis boost
+      run: whereis boost && dpkg -s libboost-dev | grep 'Version'
     - name: Run Ctest
       run: |
         mkdir build

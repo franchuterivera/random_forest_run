@@ -9,7 +9,7 @@ sudo apt-get install -y build-essential
 sudo apt-get install -y cmake
 sudo apt-get install -y libblkid-dev
 sudo apt-get install -y e2fslibs-dev
-sudo apt-get install -y libboost-all-dev
+sudo apt-get install -y libboost1.65-all-dev
 sudo apt-get install -y libaudit-dev
 sudo apt-get install -y swig
 sudo apt-get install -y lcov
