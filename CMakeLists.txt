@@ -20,7 +20,7 @@ IF(NOT CMAKE_BUILD_TYPE)
 ENDIF()
 
 # required libaries
-find_package(Boost COMPONENTS unit_test_framework)
+find_package(Boost CONFIG COMPONENTS unit_test_framework)
 find_package(Doxygen)
 find_package(PythonInterp 3)
 find_package(SWIG)
